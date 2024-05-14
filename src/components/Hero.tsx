@@ -51,7 +51,7 @@ export default function Hero() {
         }}
       >
         <Button variant="contained" size="large">
-          Resume
+          Get my CV
         </Button>
         <Button variant="outlined" size="large">
           See my work
@@ -66,9 +66,9 @@ export default function Hero() {
           left: "50%",
           transform: "translateX(-50%)",
           color: "#656565",
-          ":hover": { bgcolor: "#454545", color: "#fff" },
+          ":hover": { color: "#fff" },
         }}
-        onClick={() => scrollToSection("about")}
+        onClick={() => scrollToSection("stacks")}
       >
         <KeyboardArrowDownIcon fontSize="large" />
       </IconButton>

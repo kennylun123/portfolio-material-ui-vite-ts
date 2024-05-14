@@ -6,7 +6,7 @@ import Link from "@mui/material/Link";
 import ProTip from "./ProTip";
 import { PaletteMode, createTheme } from "@mui/material";
 import AppAppBar from "./components/AppAppBar";
-import PortfolioPage from "./PorfolioPage";
+import PortfolioPage from "./PortfolioPage";
 
 function Copyright() {
   return (

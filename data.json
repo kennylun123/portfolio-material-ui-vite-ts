@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "title": "REST Countries, API with color theme switcher",
+      "content": "REST Countries is a coding challenge by Frontend Mentor. Project requirements and a preview image of the website were provided by FEM, allowing us to create our own solution from scratch. For this project, the challenge was to develop a simple UI for searching and filtering flag information from around the world. The solution was built using Next.js, Tailwind CSS, shadcn/ui, and TypeScript. To enhance SEO performance, I integrated the REST Countries API on the server-side components with Next.js. User interaction was handled on the client-side by passing data via searchParams. Additionally, I implemented a loading animation ('skeleton') to display before the data was loaded, reducing load-time frustration. Moreover, shadcn/UI became my favorite component library due to its highly customisable components and accessibility features.",
+      "url": {
+        "live": "https://fm-rest-countries-api-with-color-theme-switcher.vercel.app/",
+        "github": "https://github.com/kennylun123/fm-rest-countries-api-with-color-theme-switcher"
+      },
+      "image": {
+        "png": "/assets/rest-countries-home-desktop.png",
+        "alt": "rest countries website preview image"
+      }
+    },
+    {
+      "title": "Space Tourism Website",
+      "content": "Space Tourism is a coding challenge by Frontend Mentor. Unlike the other projects, they also provide a Figma file as it is a modern tool for collaboration between UI designers and frontend developers. This is my first project utilising the Next.js app router. Defining routes, setting up pages, and layouts with Next.js can be done simply by creating folders and .ts files. Through this project, I learned about the relationship between server-side rendering (SSR) and client-side rendering (CSR). Essentially, this means that components requiring user interaction should be rendered on the client-side, while components without interaction should remain on the server-side for pre-rendering during build time. Additionally, I used Framer Motion for the first time to provide smoother page transitions for a better user experience.",
+      "url": {
+        "live": "https://fm-space-tourism-website-kennylun123.vercel.app/",
+        "github": "https://github.com/kennylun123/fm-space-tourism-website"
+      },
+      "image": {
+        "png": "/assets/space-tourism-website-desktop.png",
+        "alt": "space tourism website preview image"
+      }
+    },
+    {
+      "title": "The Simon Game",
+      "content": "The Simon Game is a short-term memory game where you need to memorize the color sequence and press the corresponding color button. This project was built using HTML, CSS, and JavaScript. It provided me with an interesting way to learn the basics of web structure and DOM manipulation with JavaScript.",
+      "url": {
+        "live": "https://kennylun123.github.io/the-simon-game/",
+        "github": "https://github.com/kennylun123/the-simon-game"
+      },
+      "image": {
+        "png": "/assets/the-simon-game.png",
+        "alt": "the simon game website preview image"
+      }
+    },
+    {
+      "title": "News Homepage",
+      "content": "News Homepage is a coding challenge by Frontend Mentor. This project was built using React, JavaScript, and CSS. In this project, my focus was on responsive web design and a mobile-first workflow. Generally, my approach started with composing the layout using CSS Grid, followed by creating reusable components and placing them in the right positions.",
+      "url": {
+        "live": "https://kennylun123.github.io/fm-news-homepage/",
+        "github": "https://github.com/kennylun123/fm-news-homepage?tab=readme-ov-file"
+      },
+      "image": {
+        "png": "/assets/news-homepage-component-desktop.png",
+        "alt": "news homepage preview image"
+      }
+    }
+  ]
+}
