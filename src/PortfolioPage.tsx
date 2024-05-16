@@ -10,9 +10,12 @@ import {
   ThemeProvider,
   createTheme,
   CssBaseline,
+  Avatar,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import MuiGitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 import AppAppBar from "./components/AppAppBar";
 import Hero from "./components/Hero";
 import {
@@ -35,10 +38,12 @@ import {
 } from "./tech-icons";
 
 import data from "../data.json";
+import { blue, green, grey, red } from "@mui/material/colors";
+import AvatarLinkRounded from "./components/AvatarLinkRounded";
 
 export default function PortfolioPage() {
   const [mode, setMode] = React.useState<PaletteMode>("light");
-  const { projects } = data;
+  const { projects, about } = data;
   // const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   // const LPtheme = createTheme(getLPTheme(mode));
   const defaultTheme = createTheme({
@@ -59,6 +64,18 @@ export default function PortfolioPage() {
         main: "#0066FF",
       },
     },
+    typography: {
+      h2: {
+        fontSize: "clamp(3rem, 5vw, 4rem)",
+      },
+      h3: {
+        fontSize: "clamp(1.5rem, 4vw, 1.75rem)",
+      },
+      body1: {
+        fontWeight: "200",
+        letterSpacing: "1px",
+      },
+    },
   });
 
   const toggleColorMode = () => {
@@ -74,22 +91,21 @@ export default function PortfolioPage() {
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <Hero />
       <Box
-        id="stacks"
         sx={{
           bgcolor: "#263238",
-          py: "4rem",
         }}
       >
-        <Container maxWidth="lg">
-          <Typography
-            variant="h2"
-            align="center"
-            sx={{
-              fontSize: "clamp(3rem, 5vw, 4rem)",
-            }}
-          >
-            My Tech Stack
-          </Typography>
+        <Container
+          id="stacks"
+          maxWidth="lg"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            py: "4rem",
+          }}
+        >
+          <Typography variant="h2">My Tech Stack</Typography>
           <Stack
             direction="row"
             spacing={4}
@@ -120,20 +136,13 @@ export default function PortfolioPage() {
         <Container
           id="projects"
           sx={{
-            mt: "8rem",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            py: "4rem",
           }}
         >
-          <Typography
-            variant="h2"
-            sx={{
-              fontSize: "clamp(3rem, 5vw, 4rem)",
-            }}
-          >
-            Latest Projects
-          </Typography>
+          <Typography variant="h2">Latest Projects</Typography>
 
           {projects.map((item) => (
             <Stack
@@ -141,7 +150,7 @@ export default function PortfolioPage() {
               direction={{ xs: "column", md: "row" }}
               justifyContent="center"
               alignItems="center"
-              sx={{ my: "3.5rem", gap: "2rem" }}
+              sx={{ py: "3.5rem", gap: "2rem" }}
             >
               <Box sx={{ order: { xs: 1, md: 0 } }}>
                 <Typography
@@ -152,10 +161,7 @@ export default function PortfolioPage() {
                 >
                   {item.title}
                 </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ mt: "1rem", fontWeight: "200", letterSpacing: "1px" }}
-                >
+                <Typography variant="body1" sx={{ mt: "1rem" }}>
                   {item.content}
                 </Typography>
               </Box>
@@ -262,6 +268,71 @@ export default function PortfolioPage() {
             <Divider />
             <Footer /> */}
       </Box>
+
+      <Container
+        id="about"
+        maxWidth="md"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          py: "4rem",
+        }}
+      >
+        <Typography variant="h2">About Me</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            mt: "2rem",
+          }}
+        >
+          <Avatar
+            alt="kenny photo"
+            src="/assets/me.jpg"
+            sx={{
+              width: "clamp(180px, 20vw ,250px)",
+              height: "auto",
+              border: "4px solid #454545",
+            }}
+          />
+          <Typography variant="h3" align="center" sx={{ mt: "2rem" }}>
+            {about.title}
+          </Typography>
+          <Typography variant="body1" sx={{ mt: "1rem" }}>
+            {about.content}
+          </Typography>
+
+          <Typography variant="h3" sx={{ mt: "2rem" }}>
+            Let's connect!
+          </Typography>
+
+          <Box sx={{ mt: "1rem", display: "flex", gap: ".5rem" }}>
+            <AvatarLinkRounded
+              href={about.contact.linkedin}
+              sx={{ bgcolor: blue[800] }}
+              aria-label="visit my linkedin"
+            >
+              <LinkedInIcon fontSize="large" htmlColor="#fff" />
+            </AvatarLinkRounded>
+            <AvatarLinkRounded
+              href={about.contact.github}
+              sx={{ bgcolor: grey[800] }}
+              aria-label="visit my github"
+            >
+              <MuiGitHubIcon fontSize="large" htmlColor="#fff" />
+            </AvatarLinkRounded>
+            <AvatarLinkRounded
+              href={about.contact.email}
+              sx={{ bgcolor: red[500] }}
+              aria-label="draft an email to me"
+            >
+              <EmailIcon fontSize="large" htmlColor="#fff" />
+            </AvatarLinkRounded>
+          </Box>
+        </Box>
+      </Container>
     </ThemeProvider>
   );
 }

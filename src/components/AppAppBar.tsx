@@ -8,13 +8,12 @@ import {
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 import ToggleColorMode from "./ToggleColorMode";
 import HomeIcon from "@mui/icons-material/Home";
 import AssignmentIcon from "@mui/icons-material/Assignment";
-import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
-import DraftsIcon from "@mui/icons-material/Drafts";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ChecklistIcon from "@mui/icons-material/Checklist";
 import scrollToSection from "../utils";
 
 interface AppAppBarProps {
@@ -75,35 +74,38 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 <Box sx={{ display: "flex" }}>
                   <IconButton
                     color="primary"
-                    aria-label="Home"
+                    aria-label="home"
                     size="large"
-                    onClick={() => scrollToSection("features")}
+                    onClick={() => scrollToSection("home")}
                   >
                     <HomeIcon fontSize="large" />
                   </IconButton>
+
                   <IconButton
                     color="primary"
-                    aria-label="Home"
+                    aria-label="tech stack"
                     size="large"
-                    onClick={() => scrollToSection("features")}
+                    onClick={() => scrollToSection("stacks")}
+                  >
+                    <ChecklistIcon fontSize="large" />
+                  </IconButton>
+
+                  <IconButton
+                    color="primary"
+                    aria-label="projects"
+                    size="large"
+                    onClick={() => scrollToSection("projects")}
                   >
                     <AssignmentIcon fontSize="large" />
                   </IconButton>
+
                   <IconButton
                     color="primary"
-                    aria-label="Home"
+                    aria-label="about me"
                     size="large"
-                    onClick={() => scrollToSection("features")}
+                    onClick={() => scrollToSection("about")}
                   >
-                    <QuestionAnswerIcon fontSize="large" />
-                  </IconButton>
-                  <IconButton
-                    color="primary"
-                    aria-label="Home"
-                    size="large"
-                    onClick={() => scrollToSection("features")}
-                  >
-                    <DraftsIcon fontSize="large" />
+                    <AccountCircleIcon fontSize="large" />
                   </IconButton>
                 </Box>
                 <Divider orientation="vertical" variant="middle" flexItem />

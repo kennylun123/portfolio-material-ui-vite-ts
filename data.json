@@ -48,5 +48,14 @@
         "alt": "news homepage preview image"
       }
     }
-  ]
+  ],
+  "about": {
+    "title": "I'm Kenny, a web developer based in Brighton and Hove, UK and specialised in front-end web development.",
+    "content": "I have been focusing on frontend development for over 1 year of experience in creating beautiful and intuitive user interfaces. Over this period, I have mastered HTML, CSS and JavaScript, and gained expertise in modern web technologies like React, NextJS, TailwindCSS, and Figma. My projects range from dynamic single-page applications to responsive websites, always focusing on delivering seamless user experiences. Driven by curiosity and continuous learning, I stay updated with the latest web technologies and design trends. I thrive on bringing ideas to life in the browser and am always eager to tackle new challenges and projects.",
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/kenny-ngkl/",
+      "github": "https://github.com/kennylun123",
+      "email": "mailto:kennylun19@gmail.com"
+    }
+  }
 }
