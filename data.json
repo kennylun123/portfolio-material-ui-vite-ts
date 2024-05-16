@@ -1,4 +1,10 @@
 {
+  "hero": {
+    "name": "Kenny",
+    "position": "A Frontend Developer",
+    "intro": "Passionate on creating websites that are responsive, pixel perfect, and accessible",
+    "CV": "https://drive.google.com/file/d/1c3kQLuSAZrxZpm8eNwSh_RvdSCo5wKR9/view?usp=sharing"
+  },
   "projects": [
     {
       "title": "REST Countries, API with color theme switcher",

@@ -1,8 +1,18 @@
-import { Box, Button, Container, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Link,
+  Typography,
+} from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import scrollToSection from "../utils";
+import data from "../../data.json";
 
 export default function Hero() {
+  const { hero } = data;
+
   return (
     <Container
       id="home"
@@ -21,7 +31,7 @@ export default function Hero() {
         Hi, my name is
       </Typography>
       <Typography variant="h1" sx={{ fontSize: "clamp(5.5rem, 10vw, 8rem)" }}>
-        Kenny
+        {hero.name}
       </Typography>
       <Typography
         variant="subtitle1"
@@ -29,7 +39,7 @@ export default function Hero() {
           fontSize: "clamp(2rem, 5vw, 4rem)",
         }}
       >
-        A Frontend Developer
+        {hero.position}
       </Typography>
       <Typography
         variant="body2"
@@ -39,8 +49,7 @@ export default function Hero() {
           mt: "0.5rem",
         }}
       >
-        Passionate on creating websites that are responsive, pixel perfect, and
-        accessible
+        {hero.intro}
       </Typography>
       <Box
         sx={{
@@ -50,10 +59,19 @@ export default function Hero() {
           mt: "2.5rem",
         }}
       >
-        <Button variant="contained" size="large">
+        <Button
+          component={Link}
+          href={hero.CV}
+          variant="contained"
+          size="large"
+        >
           Get my CV
         </Button>
-        <Button variant="outlined" size="large">
+        <Button
+          variant="outlined"
+          size="large"
+          onClick={() => scrollToSection("projects")}
+        >
           See my work
         </Button>
       </Box>
