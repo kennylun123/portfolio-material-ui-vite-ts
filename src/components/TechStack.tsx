@@ -18,7 +18,7 @@ import {
   ShadcnUIIcon,
   TailwindCSSIcon,
   TypeScriptIcon,
-} from "../TechIcons";
+} from "./TechIcons";
 
 function TechStack() {
   return (

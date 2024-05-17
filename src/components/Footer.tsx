@@ -9,7 +9,7 @@ function Footer() {
         align="center"
         color="text.secondary"
         sx={{ p: "1rem" }}
-      >{`© ${new Date().getFullYear()} Kenny Ng. This porfolio is built using React & MUI by Kenny Ng. Please get in touch if you want to use anything from my work.`}</Typography>
+      >{`© ${new Date().getFullYear()} Kenny Ng. This porfolio is built using Vite, React, and MUI by Kenny Ng. Please get in touch if you want to use anything from my work.`}</Typography>
     </Container>
   );
 }
