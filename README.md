@@ -1,39 +1,20 @@
-# Material UI - Vite.js in TypeScript example
+<h2 align="center">
+  Kenny Ng - Portfolio Website<br/>
+  <a href="https://portfolio-material-ui-vite-ts.vercel.app/" target="_blank">Live Site</a>
+</h2>
+<div align="center">
+  <img alt="Demo" src="public/assets/demo.png" width="550px"/>
+</div>
 
-## How to use
+<br/>
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Built With
 
-<!-- #default-branch-switch -->
+My personal portfolio website <a href="https://portfolio-material-ui-vite-ts.vercel.app/" target="_blank">Kenny Ng</a> which features some of my github projects as well as my CV and technical skills.<br/>
 
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/next | tar -xz --strip=2 material-ui-next/examples/material-ui-vite-ts
-cd material-ui-vite-ts
-```
+This project is built using these technologies.
 
-Install it and run:
-
-```bash
-npm install
-npm run dev
-```
-
-or:
-
-<!-- #default-branch-switch -->
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/next/examples/material-ui-vite-ts)
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/next/examples/material-ui-vite-ts)
-
-## The idea behind the example
-
-This example uses [Vite.js](https://github.com/vitejs/vite).
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5.
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://next.mui.com/material-ui/getting-started/templates/) section.
+- React
+- MUI
+- TypeScript
+- Vite
