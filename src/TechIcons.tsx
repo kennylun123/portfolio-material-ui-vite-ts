@@ -501,3 +501,50 @@ export const GitHubIcon = () => (
     <Typography variant="caption">GitHub</Typography>
   </IconWrapper>
 );
+
+export const MUIIcon = () => (
+  <IconWrapper>
+    <svg viewBox="0 0 128 128">
+      <path
+        fill="#1FA6CA"
+        d="M.2 68.6V13.4L48 41v18.4L16.1 41v36.8L.2 68.6zM48 41l47.9-27.6v55.3L64 87l-16-9.2 32-18.4V41L48 59.4V41z"
+      ></path>
+      <path
+        fill="#1FA6CA"
+        d="M48 77.8v18.4l32 18.4V96.2L48 77.8zM80 114.6L127.8 87V50.2l-16 9.2v18.4L80 96.2v18.4zM111.9 41V22.6l16-9.2v18.4l-16 9.2z"
+      ></path>
+    </svg>
+    <Typography variant="caption">Material UI</Typography>
+  </IconWrapper>
+);
+
+export const ShadcnUIIcon = () => (
+  <IconWrapper>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+      <rect width="256" height="256" fill="none"></rect>
+      <line
+        x1="208"
+        y1="128"
+        x2="128"
+        y2="208"
+        fill="none"
+        stroke="#000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      ></line>
+      <line
+        x1="192"
+        y1="40"
+        x2="40"
+        y2="192"
+        fill="none"
+        stroke="#000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      ></line>
+    </svg>
+    <Typography variant="caption">shadcn/UI</Typography>
+  </IconWrapper>
+);

@@ -10,10 +10,12 @@ import {
   HTMLIcon,
   JQueryIcon,
   JavaScriptIcon,
+  MUIIcon,
   MongoDBIcon,
   NextJSICON,
   NodeJSIcon,
   ReactJSIcon,
+  ShadcnUIIcon,
   TailwindCSSIcon,
   TypeScriptIcon,
 } from "../TechIcons";
@@ -43,18 +45,20 @@ function TechStack() {
         <JavaScriptIcon />
         <HTMLIcon />
         <CSSIcon />
-        <NodeJSIcon />
-        <ExpressJSIcon />
         <ReactJSIcon />
         <NextJSICON />
+        <TailwindCSSIcon />
+        <MUIIcon />
+        <ShadcnUIIcon />
+        <MongoDBIcon />
+        <ExpressJSIcon />
+        <NodeJSIcon />
         <JQueryIcon />
         <BootstrapIcon />
-        <TailwindCSSIcon />
-        <MongoDBIcon />
         <FramerMotionIcon />
-        <FigmaIcon />
         <GitIcon />
         <GitHubIcon />
+        <FigmaIcon />
       </Stack>
     </Container>
   );
