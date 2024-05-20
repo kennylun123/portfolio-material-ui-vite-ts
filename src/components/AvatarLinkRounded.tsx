@@ -13,6 +13,7 @@ function AvatarLinkRounded({
     <Avatar
       component={Link}
       href={href}
+      target="_blank"
       variant="rounded"
       sizes="large"
       {...otherProps}

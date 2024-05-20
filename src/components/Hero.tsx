@@ -62,6 +62,7 @@ export default function Hero() {
         <Button
           component={Link}
           href={hero.CV}
+          target="_blank"
           variant="contained"
           size="large"
         >

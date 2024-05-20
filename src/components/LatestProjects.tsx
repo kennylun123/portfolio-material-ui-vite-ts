@@ -84,6 +84,7 @@ function LatestProjects() {
               <Button
                 component={Link}
                 href={item.url.live}
+                target="_blank"
                 variant="contained"
                 startIcon={<OpenInNewIcon />}
                 aria-label={`${item.title} live site`}
@@ -93,6 +94,7 @@ function LatestProjects() {
               <Button
                 component={Link}
                 href={item.url.github}
+                target="_blank"
                 variant="contained"
                 startIcon={<GitHubIcon />}
                 aria-label={`${item.title} source code`}
@@ -105,8 +107,9 @@ function LatestProjects() {
       ))}
       <Button
         component={Link}
-        variant="outlined"
         href={`${data.about.contact.github}?tab=repositories`}
+        target="_blank"
+        variant="outlined"
       >
         More in my Github
       </Button>
