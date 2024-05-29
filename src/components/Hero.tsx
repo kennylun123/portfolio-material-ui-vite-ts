@@ -19,9 +19,12 @@ export default function Hero() {
       maxWidth="md"
       sx={{
         position: "relative",
-        height: "100vh",
+        minHeight: "100svh",
         px: { xs: "1.5rem", sm: "6rem" },
-        pt: "7rem",
+        py: "4.5rem",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
       }}
     >
       <Typography

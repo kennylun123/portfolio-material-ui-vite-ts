@@ -529,9 +529,9 @@ export const ShadcnUIIcon = () => (
         y2="208"
         fill="none"
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="16"
       ></line>
       <line
         x1="192"
@@ -540,9 +540,9 @@ export const ShadcnUIIcon = () => (
         y2="192"
         fill="none"
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="16"
       ></line>
     </svg>
     <Typography variant="caption">shadcn/UI</Typography>
