@@ -2,7 +2,14 @@ import { Container, Divider, Typography } from "@mui/material";
 
 function Footer() {
   return (
-    <Container maxWidth="lg">
+    <Container
+      id="footer"
+      maxWidth="lg"
+      disableGutters
+      sx={{
+        px: { xs: "1.5rem", md: "2.5rem" },
+      }}
+    >
       <Divider />
       <Typography
         variant="body2"

@@ -13,11 +13,13 @@ function AboutMe() {
     <Container
       id="about"
       maxWidth="md"
+      disableGutters
       sx={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         py: "4rem",
+        px: { xs: "1.5rem", md: "2.5rem" },
       }}
     >
       <Typography variant="h2">About Me</Typography>

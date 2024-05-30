@@ -17,14 +17,15 @@ export default function Hero() {
     <Container
       id="home"
       maxWidth="md"
+      disableGutters
       sx={{
-        position: "relative",
-        minHeight: "100svh",
-        px: { xs: "1.5rem", sm: "6rem" },
-        py: "4.5rem",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
+        py: "4.5rem",
+        px: { xs: "1.5rem", sm: "6rem" },
+        position: "relative",
+        minHeight: "100svh",
       }}
     >
       <Typography

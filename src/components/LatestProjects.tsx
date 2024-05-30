@@ -11,17 +11,20 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import data from "../../data.json";
 import React from "react";
+import ReadMore from "./ReadMore";
 
 function LatestProjects() {
   const { projects } = data;
   return (
     <Container
       id="projects"
+      disableGutters
       sx={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         py: "4rem",
+        px: { xs: "1.5rem", md: "2.5rem" },
       }}
     >
       <Typography variant="h2">Latest Projects</Typography>
@@ -34,7 +37,7 @@ function LatestProjects() {
               alignItems="center"
               sx={{ py: "3.5rem", gap: "2rem" }}
             >
-              <Box sx={{ order: { xs: 1, md: 0 } }}>
+              <Box sx={{ flex: 1, order: { xs: 1, md: 0 } }}>
                 <Typography
                   variant="h3"
                   sx={{
@@ -43,14 +46,19 @@ function LatestProjects() {
                 >
                   {item.title}
                 </Typography>
-                <Typography variant="body1" sx={{ mt: "1rem" }}>
-                  {item.content}
-                </Typography>
+                <ReadMore
+                  id={`project-${index + 1}-content`}
+                  text={item.content}
+                  amountOfWords={55}
+                  variant="body1"
+                  sx={{ mt: "1rem" }}
+                />
               </Box>
 
               <Box
                 sx={(theme) => ({
-                  flexShrink: 0,
+                  flex: 1,
+                  maxWidth: "500px",
                   display: "flex",
                   position: "relative",
                   borderRadius: "6px",
@@ -63,7 +71,7 @@ function LatestProjects() {
                   alt={item.image.alt}
                   style={{
                     maxWidth: "100%",
-                    width: "500px",
+                    width: "100%",
                     height: "300px",
                     objectFit: "cover",
                     objectPosition: "top left",
