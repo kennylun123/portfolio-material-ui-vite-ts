@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Chip,
   Container,
   Divider,
   Link,
@@ -46,12 +47,24 @@ function LatestProjects() {
                 >
                   {item.title}
                 </Typography>
+
+                <Stack direction="row" spacing={1} sx={{ mt: ".5rem" }}>
+                  {item.stacks.map((stack, i) => (
+                    <Chip
+                      key={`project-${index}-stack-${i}`}
+                      label={stack}
+                      size="small"
+                      sx={{ bgcolor: "primary.dark", fontWeight: "400" }}
+                    />
+                  ))}
+                </Stack>
+
                 <ReadMore
                   id={`project-${index + 1}-content`}
                   text={item.content}
                   amountOfWords={55}
                   variant="body1"
-                  sx={{ mt: "1rem" }}
+                  sx={{ mt: ".5rem" }}
                 />
               </Box>
 
@@ -78,7 +91,6 @@ function LatestProjects() {
                   }}
                   loading="lazy"
                 />
-
                 <Box
                   sx={(theme) => ({
                     position: "absolute",
