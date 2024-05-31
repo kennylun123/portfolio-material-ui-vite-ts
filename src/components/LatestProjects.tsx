@@ -48,7 +48,13 @@ function LatestProjects() {
                   {item.title}
                 </Typography>
 
-                <Stack direction="row" spacing={1} sx={{ mt: ".5rem" }}>
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  useFlexGap
+                  flexWrap="wrap"
+                  sx={{ mt: ".5rem" }}
+                >
                   {item.stacks.map((stack, i) => (
                     <Chip
                       key={`project-${index}-stack-${i}`}
